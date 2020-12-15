@@ -22,5 +22,5 @@ while i < 30000000:
     else:
         flag = 0
     lastnumber = nextnumber
-    if i == 30000000-1:
+    if i in [2020-1, 30000000-1]:
         print(lastnumber)
