@@ -5,10 +5,9 @@ f = open ('input', 'r')
 inp = re.split(',', f.readline())
 for i in range(len(inp)):
     numbers[int(inp[i])] = i + 1
-    inp[i] = int(inp[i])
 
 i = len(inp) - 1
-lastnumber = inp[-1]
+lastnumber = int(inp[-1])
 flag = 0
 
 while i < 30000000:
@@ -25,7 +24,3 @@ while i < 30000000:
     lastnumber = nextnumber
     if i == 30000000-1:
         print(lastnumber)
-
-
-
-
