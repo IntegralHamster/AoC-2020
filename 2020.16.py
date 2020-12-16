@@ -1,4 +1,4 @@
-import re
+iimport re
 
 f = open ('input', 'r')
 ranges = []
@@ -85,11 +85,7 @@ while True:
                 i.pop(i.index(fix_pos))
         fix_pos_alr.append(fix_pos)
 
-print(possible_names)
 ans2 = 1
-print(ticket)
-for i in range(len(ticket)):
-    if possible_names[i][0] < 6:
-        ans2 *= ticket[i]
+for i in range(6):
+    ans2 *= ticket[possible_names[i][0]]
 print(ans2)
-
