@@ -36,13 +36,11 @@ def calculate (str):
 
 
 def calculate2_electric_boogaloo(arr):
-    if arr[0] != '(':
-        i = 0
-    else:
+    if arr[0] == '(':
         length = find_bracket(arr[1:])
         arr[0] = calculate2_electric_boogaloo(arr[1:length+1])
         del arr[1:length+2]
-        i = 0
+    i = 0
     while arr.count('+') > 0:
         if arr[i + 2] != '(':
             if arr[i + 1] == '+':
@@ -60,7 +58,6 @@ def calculate2_electric_boogaloo(arr):
                 length = find_bracket(arr[i + 3:])
                 arr[i+2] = calculate2_electric_boogaloo(arr[i + 3:i + 3 + length])
                 del arr[i + 3:i + 4 + length]
-
     i = 0
     while arr.count('*') > 0:
         if arr[i + 1] == '*':
