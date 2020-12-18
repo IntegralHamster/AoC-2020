@@ -9,8 +9,6 @@ def find_bracket (str):
             return i
 
 
-#'2+(xxxsage)' - 7
-
 def calculate (str):
     if str[0] != '(':
         i = 0
