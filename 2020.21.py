@@ -51,7 +51,8 @@ for i in ing:
             count += 1
 print(count)
 
+# Part 2
 print(matching)
-
+# Just do it manually, you lazy animal. It's faster.
 # eggs fish nuts peanuts sesame shellfish soy wheat
 # dtb,zgk,pxr,cqnl,xkclg,xtzh,jpnv,lsvlx
