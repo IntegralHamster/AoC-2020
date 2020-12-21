@@ -37,11 +37,12 @@ for i in correl.keys():
         tmp.pop(tmp.index(j))
     correl[i] = tmp
 
-matching = HopcroftKarp(correl).maximum_matching(keys_only=True)
+matching = HopcroftKarp(correl).maximum_matching(keys_only=True) # if you want to do p2 at the same time
 
 nonallerg = []
 for i in correl.keys():
-    if i not in matching.keys():
+    if i not in matching.keys(): 
+  # if correl[i] == []:           - if you want to get just p1
         nonallerg.append(i)
 
 count = 0
